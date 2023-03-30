@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+    <style>
+        body{
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <button onclick="myAbs(-10)">계산하기</button>
+    <p id="show"></p>
+    <script>
+        let myAbs = function(x){ // X>0, X<0
+            // return : if ~ else문
+            if(x < 0){
+               document,getElementById("show").innerHTML = -X;
+            }else{ // x > 0
+               document,getElementById("show").innerHTML = -X;
+            }
+        }
+
+       let value = myAbs(-5); // -(-5) = 5
+       document.write("절대값 : " + value); // 5
+    </script>
+</body>
+</html>

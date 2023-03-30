@@ -14,13 +14,22 @@
            2x9=18
         */
        let dan = parseInt(prompt("단을 입력하세요. ", "1")) ;
+       let result = ""; // 누적값을 위한 변수
 
-       for(var i=1; i<10; i++){
-        document.write(dan + " X " + i +  "=" + (dan * i) + "<br>");
+       for(var i=0; i<10; i++){
+        // result = result + dan + " X " + i +  "=" + (dan * i) + "<br>";
+        // result += dan + " X " + i +  "=" + (dan * i) + "<br>";
+        let current_value = dan + " X " + i +  "=" + (dan * i) + "<br>"
+        result += current_value; // 누적값 = 누적값 + 현재값
        }
+       document.write(result);
+
+    //    for(var i=1; i<10; i++){
+    //     document.write(dan + " X " + i +  "=" + (dan * i) + "<br>");
+    //    } 
     </script>
 </head>
 <body>
     
 </body>
-</html>
+</html> 
