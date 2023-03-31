@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexOf 함수</title>
+    <script>
+        let str = "Hello world, welcome world";
+        // 앞에서 찾음
+        let n1 = str.indexOf("world"); // 6
+        let n2 = str.indexOf("asia"); // -1 (위치를 못찾으면)
+
+        // 뒤에서 찾음
+        let n3 = str.lastIndexOf("world"); // 21
+
+        let fruits = ['apple', 'banana', 'grape'];
+        let n4 = fruits.indexOf('grape');
+
+        document.write(n1 + "<br>");
+        document.write(n2 + "<br>");
+        document.write(n3 + "<br>");
+        document.write(n4 + "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

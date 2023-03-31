@@ -24,15 +24,17 @@
         // 나이 = 현재년도 - 태어난 년도 + 1
         function calcAge(){
             const CURRENT_YEAR = 2023;
-            let birthYear = prompt("출생 년도를 입력하세요", "yyyy");
+            let birthYear = parseInt(prompt("출생 년도를 입력하세요", "yyyy"));
             let age; // 할당 않음
         
             // isNaN(문자) -> true
+            // 취소 - null 또는 문자 입력시 isNaN()
             if(birthYear === null || isNaN(birthYear)){
             document.getElementById("show").innerHTML = "입력이 취소되었습니다";
         }else{
             age = CURRENT_YEAR - parseInt(birthYear) + 1;  
-            document.getElementById("show").innerHTML = age;
+            document.getElementById("show").innerHTML = 
+            "당시느이 나이는 " + age + "세 이군요!";
             
         }
     }

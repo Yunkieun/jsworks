@@ -1,0 +1,7 @@
+#item{
+    width: 420px; 
+    margin: 0 auto; 
+    position: relative;
+}
+.btn_show{position: absolute; top: 260px; left: 10px;}
+.text{width: 400px; display: none; line-height: 1.5em;}
