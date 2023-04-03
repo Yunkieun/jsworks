@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 정의</title>
+    <script>
+        /*
+           let 객체이름 = {
+                  속성이름:값,함수이름:function(){}
+            }
+        */
+
+        // 객체 만들기
+        let person = {
+            name : "유세뚱",
+            age : 27,
+            isMerried: true,
+            numberOfChlidren: 2,
+
+            play : function(){
+                // person.name인데 자기자신 일 때 this를 사용 (내부에서 사용할때)
+                alert(this.name + "가 홈런을 친다.");
+            }
+        }
+
+        // 객체 사용
+        console.log("이름 : " + person.name);
+        console.log("나이 : " + person.age);
+        console.log("자녀수 : " + person.numberOfChlidren);
+        person.play();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼 토글 기능</title>
+    <style>
+        button{margin: 10px;}
+        #pic{display: none;}
+    </style>
+</head>
+<body>
+    <button onclick="showHide()" id = "btnText">보이기</button>
+    <div>
+       <img src="./images/flower1.jpg" alt="꽃" id="pic"> 
+    </div>
+    <script>
+        
+        function showHide(){
+            // let sw = 0; 상태 변수 생략해도 됨
+            let img = document.getElementById("pic");
+            let btnText = document.getElementById("btnText");
+            if(img.style.display == "block"){
+                img.style.display = "none";
+                btnText.innerText = "보이기";
+                // sw = 1;
+            }else{
+                img.style.display = "block";
+                btnText.innerText = "숨기기";
+                // sw = 0;
+            }
+        }
+    </script>
+</body>
+</html>
