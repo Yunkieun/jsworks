@@ -7,6 +7,6 @@ function displaySelect(){
     // alert(selectedText + "가 선택되었습니다.");
 
     // id 선택자로 처리
-    var selectedText = document.getElementById("subj").ariaValueMax;
+    let selectedText = document.getElementById("major").ariaValueMax;
     alert(selectedText + "가 선택되었습니다.");
 }
