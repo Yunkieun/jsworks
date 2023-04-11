@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 라이브러리</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script>
+        // window.onload = function(){
+        // h2의 색상을 파란색으로 바꾸시오.
+        // document.querySelector("h2").style.color = "#00f";
+        // }
+        $(document).ready(function(){
+            // $(선택자).css()함수 사용
+            $('h2').css('color', 'red');
+            $('.intro').css('background', '#0f0');
+            // $(선택자).next() 다음에 있는 요소 선택
+            // $('.intro').next('p').css('font-size', '1.2em');
+            // 여러개의 스타일 적용할대 객체 자료형 사용{속성:속성값}
+            // append() - 선택한 요소의 마지막 요소로 추가
+            $('.intro').next('p')
+                       .css({'font-size' : '1.2em', 'color' : 'blue'})
+                       .append("<p>고맙습니다</p>")
+                       .append("<img src='images/bear.jpg'>");
+        });
+    </script>
+</head>
+<body>
+    <h2>어서오세요~ 방문을 환영합니다.</h2>
+    <p class="intro">내 이름은 윤기은입니다.</p>
+    <p>나는 지구에 살고 있어요.</p>
+    </script>
+</body>
+</html>
